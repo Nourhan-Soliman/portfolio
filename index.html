@@ -28,11 +28,11 @@
         }
         .profile-pic::before {
             top: -30px;
-    left: -30px;
+            left: -30px;
             border-color: var(--main_color) transparent transparent var(--main_color);
         }
         .profile-pic::after {
-            border-color: transparent var(--main_color ) var(--main_color) transparent;
+            border-color: transparent var(--main_color) var(--main_color) transparent;
             bottom: -30px;
             right: -30px;
         }
@@ -40,6 +40,20 @@
         h1 span:hover {
             transform: scale(1.1);
             transition: transform 0.3s;
+        }
+
+        .home {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 4rem;
+        }
+
+        @media (max-width: 920px) {
+            .home {
+                align-items: flex-start;
+            }
         }
     </style>
 </head>
@@ -73,21 +87,20 @@
                 </div>
             </nav>
             <!-- home page -->
-            <div class="col d-flex justify-content-center  home pt-4" style="height: 100vh;">
+            <div class="col home">
                 <div class="row w-100">
                     <div class="col-md-6">
                         <div class="intro">
-                            <h1>Hello, my name is <span class="highlight"
-                                 style="font-size: 17px; font-style: italic;">
-                                 Nourhan Soliman</span></h1>
-                            <h2 >I'm a <span class="highlight" style="font-style: italic; font-size: 16px;">Front End Developer</span></h2>
+                            <h1>Hello, my name is <span class="highlight" style="font-size: 17px; font-style: italic;">Nourhan Soliman</span></h1>
+                            <h2>I'm a <span class="highlight" style="font-style: italic; font-size: 16px;">Front End Developer</span></h2>
                             <p class="pb-2">Hi, I am Nourhan. Front End Developer with a passion for creating responsive and user-friendly web applications. I strive to deliver high-quality interfaces that enhance user experience and drive engagement.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 text-center pt-2 ">
-                          <div class="profile-pic">  <img src="./imgs/photo_2024-07-14_20-44-06.jpg" alt="Profile Picture"></div>
+                    <div class="col-md-6 text-center pt-2">
+                        <div class="profile-pic">
+                            <img src="./imgs/photo_2024-07-14_20-44-06.jpg" alt="Profile Picture">
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
