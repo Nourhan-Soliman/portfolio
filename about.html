@@ -11,121 +11,99 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Moon+Dance&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./master.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Moon+Dance&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./master.css">
 
-  
-  <style>
-    
+    <style>
+       
 
+        .skills {
+            width: 100%;
+        }
+
+        @media (min-width: 992px) {
+            .skills {
+                width: 50%;
+            }
+        }
+
+        .skill-bar {
+            height: 25px;
+            border-radius: 30px;
+            background-color: var(--main_color);
+            text-align: center;
+            color: white;
+            margin-top: 8px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container-fluid about" style="background-color: #121212; color: #fff;">
-        <div class="row ">
-            <nav class="col-md-3 col-lg-2 d-md-block sidebar" style=" background-color: #1f1f1f;">
+    <div class="container-fluid" style="background-color: #121212; color: #fff;">
+        <div class="row">
+            <nav class="sidebar" style="background-color: #1f1f1f;">
                 <div class="sidebar-sticky">
-
                     <ul class="nav flex-column mt-4" id="navbar">
                         <li class="nav-item">
-                            <a class="nav-link text-light mb-3" href="index.html"><i class="bi bi-house"></i> Home</a>
+                            <a class="nav-link text-light mb-3" 
+                            href="index.html"><i class="bi bi-house-door-fill"></i> <span>Home</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light mb-3" href="about.html"><i class="bi bi-person-fill"></i> About</a>
+                            <a class="nav-link text-light mb-3" href="about.html"><i class="bi bi-person-fill"></i> <span>About</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light mb-3" href="porfolio.html"><i class="bi bi-list-check"></i> Portfolio</a>
+                            <a class="nav-link text-light mb-3" href="porfolio.html"><i class="bi bi-list-check"></i> <span>Portfolio</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light mb-3" href="contacts.html"><i class="bi bi-chat-dots-fill"></i> Contact</a>
+                            <a class="nav-link text-light mb-3" href="contacts.html"><i class="bi bi-chat-dots-fill"></i> <span>Contact</span></a>
                         </li>
                     </ul>
                 </div>
             </nav>
 
             <!-- about page -->
-            <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4" style=" height: 1000px; font-family: Inter, sans-serif;
-            ">
+            <div class="ml-sm-auto col" style="height: 100vh; font-family: Inter, sans-serif;">
+                <div class="row mt-5">
+                    <div class="col-md-12 d-flex flex-column justify-content-center align-items-center text-start">
+                        <h1 style="font-family: 'Moon Dance', cursive; font-weight: 800; font-size: 50px;
+                         color: var(--main_color);">About me</h1>
+                        <!-- <p class="">🏢 I'm a Front-End Developer</p> -->
+                        <p style="">👨‍💻 As an IT student, I'm constantly learning and exploring new technologies to improve my skills.</p>
+                        <p>💬 Ask me about my experience with HTML, CSS, JavaScript, or anything in web development.</p>
 
-                <div class="row mt-5 ">
-                    <div class="col-md-12">
+                        <div class="mt-4">
+                            <a href="https://drive.google.com/drive/folders/1O9tIuqS8fQ5UqCu0fZ8Bcr0iDV7O0BB5?usp=sharing"
+                                class="btn text-light" style="background-color: var(--main_color); font-weight: bold; width:80px;"
+                                 target="_blank">CV</a>
+                            <a href="https://www.linkedin.com/in/nourhan-soliman161"
+                                class="btn text-light " style="background-color: var(--main_color);  width:80px;font-weight: bold;" 
+                                target="_blank">linkedin</a>
+                                <a href="https://github.com/Nourhan-Soliman "
+                                class="btn text-light " style="background-color: var(--main_color); font-weight: bold; width:80px;" 
+                                target="_blank">Github</a>
+                        </div>
+                    </div>
+
+                    <div class="col mt-5 d-flex flex-column justify-content-center align-items-center">
                         <div class="skills">
-                            <h1 style="font-family: 'Moon Dance', cursive ; font-weight: 800; font-size: 50px; color: #e74c3c;">About me</h1>
-                            <p>🏢 I'm a Front-End Developer </p> 
-                               <p></p> 👨‍💻 As an IT student, I'm constantly learning and exploring new
-                                technologies to
-                                improve my skills.</p>
-                              <p>  💬 Ask me about my experience with HTML , CSS,JavaScript or anything related to web
-                                development.</p>
-                            <div class="row mt-5">
-                                <div class="col-md-6">
-                                    <p><strong>Birthday:</strong> 16 January 2003</p>
-                                    <p><strong>Faculty:</strong> Computers and Artificial Intelligence</p>
-                                    <p><strong>Department:</strong> IT</p>
-                                    <p><strong>City:</strong> Beni-suef</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p><strong>Age:</strong> 21</p>
-                                    <p><strong>Email:</strong>nourhansoliman161@gmail.com</p>
-                                    <p><strong>Phone:</strong> 01556692168</p>
-                                    <p><strong>Freelance:</strong> Available</p>
-                                </div>
-                            </div>
-                            <div class="mt-4">
-                                <a href="https://drive.google.com/drive/folders/1O9tIuqS8fQ5UqCu0fZ8Bcr0iDV7O0BB5?usp=sharing" class="btn text-light  "
-                                 style="background-color: #e74c3c; font-weight: bold;" target="_blank" >Download CV</a>
-                                <!-- <a href="#" class="btn text-light ml-2" style="background-color: #e74c3c; font-weight: bold;" >Hire Me</a> -->
-                            </div>
-                            <div class="mt-5 d-flex flex-column  justify-content-center " style="width: 50%;">
-                                <div class="progress" style="height: 25px; border-radius: 30px;" >
-                                    <div class="progress-bar" role="progressbar"
-                                        style="width: 100%;  background-color: #e74c3c;" aria-valuenow="100"
-                                        aria-valuemin="0" aria-valuemax="100" >HTML 100%</div>
-                                </div>
-                                <div class="progress mt-2" style="height: 25px; border-radius: 30px;" >
-                                    <div class="progress-bar" role="progressbar"
-                                        style="width: 95%; background-color: #e74c3c;" aria-valuenow="95"
-                                        aria-valuemin="0" aria-valuemax="100">CSS 95%</div>
-                                </div>
-                                <div class="progress mt-2" style="height: 25px; border-radius: 30px;" >
-                                    <div class="progress-bar" role="progressbar"
-                                        style="width: 75%; background-color: #e74c3c;" aria-valuenow="75"
-                                        aria-valuemin="0" aria-valuemax="100">bootstrap 75%</div>
-                                </div>
-                                <div class="progress mt-2" style="height: 25px; border-radius: 30px;" >
-                                    <div class="progress-bar" role="progressbar"
-                                        style="width: 70%; background-color: #e74c3c;" aria-valuenow="70"
-                                        aria-valuemin="0" aria-valuemax="70">JavaScript 70%</div>
-                                </div>
-                                <div class="progress mt-2" style="height: 25px; border-radius: 30px;" >
-                                    <div class="progress-bar" role="progressbar"
-                                        style="width: 50%; background-color: #e74c3c;" aria-valuenow="70"
-                                        aria-valuemin="0" aria-valuemax="50">React 50%</div>
-                                </div>
-                            </div>
+                            <div class="skill-bar">HTML</div>
+                            <div class="skill-bar">CSS</div>
+                            <div class="skill-bar">Bootstrap</div>
+                            <div class="skill-bar">JavaScript</div>
+                            <div class="skill-bar">React</div>
+                            <div class="skill-bar">Figma</div>
+
                         </div>
                     </div>
                 </div>
-            </main>
+            </div>
         </div>
-    </div>
 
-</body>
-
-</html>
-
-<!-- End about -->
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-
-</script>
-<script src="./master.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="./master.js"></script>
 </body>
 
 </html>

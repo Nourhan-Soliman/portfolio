@@ -1,11 +1,55 @@
-.nav li{
 
+:root{
+--main_color:#00B38F;
+}
+
+.nav li{
 
     border-bottom: 1px solid #443131;
 }
 
 
 .active-link {
-    color: #e74c3c !important;
+    color: var(--main_color) !important;
 }
-/* */
+
+@media (max-width: 768px) {
+    .nav-link span {
+        display: none;
+    }
+    .sidebar {
+        width: auto;
+    }
+    .sidebar-sticky {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+.home img {
+
+max-width: 200px;
+
+}
+
+ 
+
+
+@media (max-width: 920px) {
+
+    .intro h1 , .intro h2{
+
+      font-size: 20px;
+
+
+      margin-bottom: 20px;
+
+
+}
+}
+
