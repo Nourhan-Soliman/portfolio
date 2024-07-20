@@ -37,14 +37,12 @@ max-width: 200px;
 
 }
 
- 
-
 
 @media (max-width: 920px) {
 
     .intro h1 , .intro h2{
 
-      font-size: 20px;
+      font-size: 15px;
 
 
       margin-bottom: 20px;
